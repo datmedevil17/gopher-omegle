@@ -2,6 +2,10 @@
 
 @layer base {
   body {
-    @apply antialiased bg-gray-900 text-white min-h-screen;
+    @apply bg-white text-gray-900 overflow-hidden m-0 p-0 w-full h-full;
+  }
+
+  #root {
+    @apply w-full h-full;
   }
 }

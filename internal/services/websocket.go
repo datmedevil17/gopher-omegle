@@ -251,7 +251,7 @@ func (c *Client) ReadPump() {
 		msg.From = c.ID
 
 		switch msg.Type {
-		case "offer", "answer", "add-ice-candidate", "chat":
+		case "offer", "answer", "add-ice-candidate", "chat", "typing":
 			c.Hub.Broadcast <- &msg
 		default:
 			log.Printf("Unknown message type: %s", msg.Type)
