@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useAuthStore } from '../store'
 import { Video, VideoOff, Mic, MicOff, MessageSquare, Send, Smile } from 'lucide-react'
-import EmojiPicker from 'emoji-picker-react'
+import EmojiPicker, { type EmojiClickData } from 'emoji-picker-react'
 
 // WebRTC Configuration
 const rtcConfig = {
